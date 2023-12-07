@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
-import { Loading } from '../components/navigation/loadingPage';
 import Login from './authentication/login';
+import LoadingPage from './authentication/load';
 
 const Index = ({ userDetails, userId, setUserDetails, setUserID }) => {
   const router = useRouter();
@@ -21,7 +21,7 @@ const Index = ({ userDetails, userId, setUserDetails, setUserID }) => {
   return (
     <>
       {loading ? (
-        <>{Loading()}</>
+        <>{LoadingPage()}</>
       ) : (
         <Login setLoading={setLoading} setUserDetails={setUserDetails} setUserID={setUserID}/>
       )}

@@ -21,7 +21,7 @@ const Login = ({setUserDetails, setLoading, setUserID}) => {
     console.log('Login handle');
     const try_login = () =>{
       setCorrectUser(true)
-      const try_user = {_id: '43j', type:'super_admin', email: 'erf@gmail.com'}
+      const try_user = {_id: 'buyer--J3344S543435643AD3j', type:'buyer', email: details.email}
       setUserDetails(try_user)
       setUserID(try_user._id)
       console.log('login details: ', try_user)
@@ -63,7 +63,7 @@ const Login = ({setUserDetails, setLoading, setUserID}) => {
   };
 
   return (
-    <AuthLayout>
+    <AuthLayout >
         <form id={styles.login}>
           <h4>Login</h4>
             <input
@@ -87,8 +87,10 @@ const Login = ({setUserDetails, setLoading, setUserID}) => {
           <button type="button" onClick={handleLogin}>
             LOGIN
           </button>
-          <p><Link to={'#'}>Create Account</Link></p>
-          <p><Link to='#'>Forgot Password? </Link></p>
+          <div className={styles.theLinks}>
+            <p><span>Create Account</span></p>
+            <p><span>Forgot Password? </span></p>
+          </div>
           {loginError && <p className="error">{loginError}</p>}
           {correctUser && <p>Successfull log in</p>}
         </form>

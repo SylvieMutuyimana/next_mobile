@@ -57,6 +57,8 @@ export const startComponents_ =()=>{
                             the_index = count  
                         }
                         the_value__ = the_categories[the_index]
+                    }else if(theKey==='image'){
+                        the_value__ = 'http://toppng.com/04953' + count
                     }else if(theKey==='status'){
                         the_value__ = (count%2 ===0)?'Sold':''
                     }else if(theKey==='_id', theKey==='item_id_'){

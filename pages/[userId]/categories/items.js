@@ -16,7 +16,7 @@ const ItemsContainer = ({theItemsData, setSelectedItem}) => {
         return(
             <div className={styles.card} key={index} onClick={()=>handleselected(item)}>
                 <article >
-                    <Image src={item.image} alt={item.name}/>
+                    <Image src={item.image} alt={item.name} width={40} height={40}/>
                 </article>
                 <aside>
                     <p>{item.description}</p>

@@ -19,7 +19,7 @@ const Cart = ({theItemsData, setSelectedItem, allItems}) => {
         return(
             <div className={`${styles.card} ${styles.cart}`}key={index} onClick={()=>handleselected(item)}>
                 <article >
-                    <Image src={the_item.image} alt={the_item.name}/>
+                    <Image src={the_item.image} alt={the_item.name} width={40} height={40}/>
                 </article>
                 <aside>
                     <p style={{fontWeight:'normal'}}>{the_item.description} </p>

@@ -5,9 +5,9 @@ import { useRouter } from 'next/router';
 import '../styles/global.css';
 import AppLayout from './Layout';
 import {getUserFromLocalStorage} from '../components/localStorage';
-import { Loading } from '../components/navigation/loadingPage';
 import { backendhost } from '../components/navigation/routes';
 import { startComponents_ } from '../components/some_components';
+import LoadingPage from './authentication/load';
 
 function App({ Component, pageProps }) {
   const [currentPage, setCurrentPage] = useState(null);
@@ -54,6 +54,7 @@ function App({ Component, pageProps }) {
       if(!appData.items || !appData.categories || !appData.wishlist || !appData.cart||
         !appData.purchases || !appData.sold_items
       ) {
+        console.log('stuck here')
       }else{
         setLoadingData(false)
       }
@@ -81,7 +82,7 @@ function App({ Component, pageProps }) {
         ):(
           <>
             {loadingData ? (
-              <>Fetching Data{Loading()}</>
+              <>Fetching Data{LoadingPage()}</>
             ) : (
               <Component
                 {...pageProps}

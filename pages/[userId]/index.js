@@ -14,7 +14,7 @@ const Index = ({appData}) => {
         <FacilityLayout page_name='Dashboard'>
             <div id={styles.Dashboard}>
                 <div id={styles.pageHead}>
-                    <Image src={''} width='200px' height='300px' alt={'e waste'}/>
+                    <Image src={''} width={200} height={300} alt={'e waste'}/>
                     <div className={styles.textHolder}>
                         E-WASTE MANAGEMENT RE-IMAGINED
                     </div>

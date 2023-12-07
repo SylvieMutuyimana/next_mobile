@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styles from '../../styles/module.css/Header.module.css';
 import { menuPages } from './page_links';
 
-const Header = ({userDetails, setUserDetails, userId}) => {
+const Header = ({userDetails, setUserDetails, userId, currentPage}) => {
   const router = useRouter()
   const userType = userDetails?.type || 'buyer'
   const sidebar_pages =  menuPages[userType]
@@ -22,7 +22,7 @@ const Header = ({userDetails, setUserDetails, userId}) => {
     <nav id={styles.mainNav} className={sidebarOpen? styles.openSidebar: ''}>
       <div className={styles.theHeader}>
         <div className={styles.pageName}>
-          <h4>Pagename</h4>
+          <h4>{currentPage}</h4>
         </div>
         <div type='submit' onClick={toggleSidebar} className={styles.toggleSidebar}> 
           <i className='fa fa-bars'></i>

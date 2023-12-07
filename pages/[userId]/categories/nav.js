@@ -17,7 +17,7 @@ const Nav = ({navData, setCategory, selectedCategory, setSelectedItem}) => {
                 }}
             >
                 <div className={styles.top}>
-                    <Image src={dict.image} alt={dict.name}/>
+                    <Image src={dict.image} alt={dict.name} width={40} height={40}/>
                 </div>
                 <div className={styles.bottom}>
                     <p>{dict.name}</p>

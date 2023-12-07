@@ -19,7 +19,7 @@ const WishList = ({theItemsData, setSelectedItem, allItems}) => {
         return(
             <div className={`${styles.card} ${styles.wishlist}`}key={index} onClick={()=>handleselected(item)}>
                 <section >
-                    <Image src={the_item.image} alt={the_item.name}/>
+                    <Image src={the_item.image} alt={the_item.name} width={40} height={40}/>
                     <p style={{fontWeight:'bold'}}>{the_item.amount} rwf</p>
                 </section>
             </div>

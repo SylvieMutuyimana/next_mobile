@@ -15,7 +15,7 @@ const Row2 = ({row2Data}) => {
         return(
             <div className={styles.card}>
                 <article >
-                    <Image src={dict.image} alt={dict.name}/>
+                    <Image src={dict.image} alt={dict.name} width={40} height={40}/>
                 </article>
                 <aside>
                     <p>{dict.description}</p>

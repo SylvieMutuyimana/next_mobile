@@ -58,7 +58,7 @@ const Signup = () => {
           </button>
           {signupError && <p className="error">{signupError}</p>}
           <p style={{textAlign:'center'}}>
-            <Link to ={'#'}>Signup</Link> as a Facility{' '}
+            <a href='#'>Signup</a> as a Facility{' '}
           </p>
         </form>
     </AuthLayout>

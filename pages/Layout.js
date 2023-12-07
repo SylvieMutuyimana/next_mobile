@@ -23,6 +23,7 @@ export default function AppLayout({ children, userDetails, setUserDetails, userI
     if(userDetails){
       const userType = userDetails.type || 'buyer'
       const the_pathname = pathname.split('/')[pathname.split('/').length - 1]
+      console.log('userType: ',userType)
       console.log('FooterPages: ',FooterPages)
       console.log('FooterPages: ',FooterPages[userType])
       console.log('pathname: ',the_pathname)

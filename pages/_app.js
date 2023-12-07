@@ -7,7 +7,7 @@ import AppLayout from './Layout';
 import {getUserFromLocalStorage} from '../components/localStorage';
 import { Loading } from '../components/navigation/loadingPage';
 import { backendhost } from '../components/navigation/routes';
-import { startComponents_ } from './some_components';
+import { startComponents_ } from '../components/some_components';
 
 function App({ Component, pageProps }) {
   const [currentPage, setCurrentPage] = useState(null);

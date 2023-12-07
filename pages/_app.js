@@ -22,11 +22,11 @@ function App({ Component, pageProps }) {
   useEffect(()=>{
     //console.log('11111111')
     if(!appData.items || !appData.categories || !appData.wishlist || !appData.cart||
-      !appData.purchases || !appData.sold_items || !appData.users) {
+      !appData.purchases || !appData.sold_items) {
         if(!loadingData){setLoadingData(true)}
     }else if(loadingData){setLoadingData(false)}
   },[!appData.items, !appData.categories, !appData.wishlist, !appData.cart||
-      !appData.purchases, !appData.sold_items, !appData.users])
+      !appData.purchases, !appData.sold_items])
 
   useEffect(() => {
     //console.log('222222222')
@@ -52,7 +52,7 @@ function App({ Component, pageProps }) {
     //console.log('3333333')
     if(loadingData && userId && userDetails){
       if(!appData.items || !appData.categories || !appData.wishlist || !appData.cart||
-        !appData.purchases || !appData.sold_items || !appData.users
+        !appData.purchases || !appData.sold_items
       ) {
       }else{
         setLoadingData(false)

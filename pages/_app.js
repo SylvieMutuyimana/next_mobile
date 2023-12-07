@@ -21,25 +21,6 @@ function App({ Component, pageProps }) {
   const [loadingData, setLoadingData] = useState(true);
   const [appData, setappData] = useState(starting_Components)
 
-  const setEndpointData = async()=>{
-    try {
-      const the_route = `http://localhost:3000/api/${endpoint}`
-      const response = await axios.get(the_route);
-      if (response.status === 200) {
-        const the_data = response.data
-        setappData(prev=> ({...prev, [endpoint]: the_data}))
-      }
-    } catch (error) {
-      console.error(error);
-    }
-  }
-
-  const fetchData = () => {
-    theRoutes.map(endpoint=>{
-      setEndpointData(endpoint)
-      //console.log('endpoint: ',endpoint)
-    })
-  };
   useEffect(()=>{
     //console.log('11111111')
     if(!appData.items || !appData.categories || !appData.wishlist || !appData.cart||
@@ -75,7 +56,6 @@ function App({ Component, pageProps }) {
       if(!appData.items || !appData.categories || !appData.wishlist || !appData.cart||
         !appData.purchases || !appData.sold_items || !appData.users
       ) {
-        fetchData()
       }else{
         setLoadingData(false)
       }

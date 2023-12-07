@@ -4,7 +4,6 @@ import React from 'react';
 import Row1 from './dashboard/row1';
 import Row2 from './dashboard/row2';
 import FacilityLayout from './Layout';
-import {waste} from '../../assets/images/waste.jpg';
 import Image from 'next/image';
 
 const Index = ({appData}) => {
@@ -15,7 +14,7 @@ const Index = ({appData}) => {
         <FacilityLayout page_name='Dashboard'>
             <div id={styles.Dashboard}>
                 <div id={styles.pageHead}>
-                    <Image src={waste} width='200px' height='300px' alt={'e waste'}/>
+                    <Image src={''} width='200px' height='300px' alt={'e waste'}/>
                     <div className={styles.textHolder}>
                         E-WASTE MANAGEMENT RE-IMAGINED
                     </div>

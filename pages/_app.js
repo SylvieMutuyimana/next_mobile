@@ -4,8 +4,6 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import '../styles/global.css';
 import AppLayout from './Layout';
-import axios from 'axios';
-import {theRoutes} from '../components/data/routes';
 import {getUserFromLocalStorage} from '../components/localStorage';
 import { Loading } from '../components/navigation/loadingPage';
 import { backendhost } from '../components/navigation/routes';

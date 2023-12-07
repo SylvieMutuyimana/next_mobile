@@ -8,7 +8,7 @@ const Index = ({ userDetails, userId, setUserDetails, setUserID }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    console.log('4444444')
+    console.log('444')
     setTimeout(() => {
       setLoading(false);
       console.log("the userDetails: ", userDetails)

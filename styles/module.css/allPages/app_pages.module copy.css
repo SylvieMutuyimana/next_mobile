@@ -1,0 +1,194 @@
+#thePage {
+  background-color: red;
+  width: 95%;
+  margin: 0 !important;
+}
+#thePage .error {
+  color: #a52a2a;
+}
+#thePage .success {
+  color: navy;
+}
+#thePage.thePage {
+}
+#thePage .otherbuttons {
+  padding: 0 15px !important;
+}
+#thePage .otherbuttons button {
+  color: white !important;
+}
+#thePage .otherbuttons button:hover {
+  color: rgb(245, 243, 239) !important;
+}
+#thePage h2 {
+  padding: 0px !important;
+}
+#thePage .page {
+  margin-top: 0 !important;
+  padding: 0px !important;
+}
+#thePage .page table {
+  margin-top: 20px !important;
+}
+#thePage .page table thead th, #thePage .page table tbody td {
+  height: 40px !important;
+  margin-top: 5px;
+  text-align: left !important;
+}
+#thePage .page table tbody tr td:first-child, #thePage .page table thead tr th:first-child {
+  text-align: center !important;
+}
+#thePage .page table .active, #thePage .page table .inactive {
+  border-radius: 5px;
+  color: white;
+}
+#thePage .page table .active {
+  background-color: #088006;
+}
+#thePage .page table .inactive {
+  background-color: red;
+}
+#thePage .page i {
+  color: var(--button_back);
+}
+#thePage .page button.active {
+  background-color: #088006;
+}
+#thePage .page button.download {
+  background-color: #F68602;
+}
+#thePage .page button.inactive {
+  background-color: transparent !important;
+  border: none !important;
+}
+#thePage .page.specific tr, #thePage .page.vehicleDetails tr {
+  border: 1px solid grey !important;
+}
+#thePage .page.vehicleDetails article, #thePage .page.vehicleDetails aside {
+  background-color: white !important;
+  border-radius: 5px;
+  margin-top: -20px !important;
+  padding: 2px 2% 20px 2% !important;
+}
+#thePage .page.vehicleDetails article {
+  width: 26% !important;
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+#thePage .page.vehicleDetails article hr {
+  color: #0283E1;
+  height: 2px;
+  background-color: #0283E1;
+  border-radius: 5%;
+}
+#thePage .page.vehicleDetails article .active, #thePage .page.vehicleDetails article .inactive {
+  border-radius: 5px;
+  margin-left: 35%;
+  padding: 4px 0px !important;
+  color: white;
+}
+#thePage .page.vehicleDetails article .active {
+  background-color: #088006;
+}
+#thePage .page.vehicleDetails article .inactive {
+  background-color: orangered;
+}
+#thePage .page.vehicleDetails article table {
+  width: 80%;
+  background-color: rgba(128, 128, 128, 0.11);
+  margin-left: 10%;
+}
+#thePage .page.vehicleDetails article table tr td {
+  border-top: 2px solid #353434 !important;
+}
+#thePage .page.vehicleDetails article table tr td:first-child {
+  text-align: left !important;
+}
+#thePage .page.vehicleDetails article table tr td:last-child {
+  text-align: right !important;
+}
+#thePage .page.vehicleDetails article table tr:last-child td {
+  border-bottom: 2px solid #353434 !important;
+}
+#thePage .page.vehicleDetails aside {
+  width: 64% !important;
+}
+#thePage .page.vehicleDetails aside .vehicleHead button {
+  font-weight: bold !important;
+}
+#thePage .page.vehicleDetails aside .vehicleHead button.inactive {
+  background-color: transparent !important;
+}
+#thePage .page.vehicleDetails aside .vehicleHead button.inactive:nth-child(n+2) {
+  border-left: 1px solid gray !important;
+  border-radius: 0px !important;
+}
+#thePage .page.vehicleDetails aside .vehicleHead button.inactive:hover {
+  color: #00497e !important;
+  border-radius: 5px !important;
+  border-bottom: 1px solid grey !important;
+}
+#thePage .page.vehicleDetails aside .vehicleHead button:nth-child(n+2) {
+  margin-left: 5px !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.basic table {
+  border: 1px solid grey;
+  padding: 0 !important;
+  color: #616161 !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.basic table tr {
+  padding: 0 !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.basic table tr td {
+  padding: 7px !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.basic table tr td:nth-child(even) {
+  border-left: 1px solid grey !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.basic table tr:nth-child(n+2) td {
+  border-top: 1px solid grey !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.bookings table, #thePage .page.vehicleDetails aside .detailsLane.geofence table, #thePage .page.vehicleDetails aside .detailsLane.expenses table {
+  background-color: rgba(128, 128, 128, 0.431372549) !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.bookings table thead, #thePage .page.vehicleDetails aside .detailsLane.geofence table thead, #thePage .page.vehicleDetails aside .detailsLane.expenses table thead {
+  background-color: rgba(128, 128, 128, 0.862745098) !important;
+}
+#thePage .page.vehicleDetails aside .detailsLane.bookings table tbody tr:nth-child(odd) td.action:hover, #thePage .page.vehicleDetails aside .detailsLane.geofence table tbody tr:nth-child(odd) td.action:hover, #thePage .page.vehicleDetails aside .detailsLane.expenses table tbody tr:nth-child(odd) td.action:hover {
+  font-weight: bold;
+}
+#thePage .page.vehicleDetails aside .detailsLane.bookings table tbody tr:nth-child(even), #thePage .page.vehicleDetails aside .detailsLane.geofence table tbody tr:nth-child(even), #thePage .page.vehicleDetails aside .detailsLane.expenses table tbody tr:nth-child(even) {
+  background-color: white;
+}
+#thePage .page.vehicleDetails aside .detailsLane.bookings table tbody tr:hover, #thePage .page.vehicleDetails aside .detailsLane.geofence table tbody tr:hover, #thePage .page.vehicleDetails aside .detailsLane.expenses table tbody tr:hover {
+  text-decoration: none;
+  font-weight: normal !important;
+}
+#thePage .page.add {
+  background-color: green;
+}
+#thePage .page.group {
+  background-color: purple;
+}
+#thePage .page.other {
+  background-color: orange;
+}
+
+@media screen and (max-width: 800px) {
+  #thePage {
+    margin-top: 0 !important;
+  }
+  #thePage .page.vehicleDetails article, #thePage .page.vehicleDetails aside {
+    float: none;
+  }
+  #thePage .page.vehicleDetails article {
+    width: 300px !important;
+  }
+  #thePage .page.vehicleDetails aside {
+    width: 100% !important;
+    margin-top: 10px !important;
+  }
+}
+
+/*# sourceMappingURL=app_pages.module.css.map */

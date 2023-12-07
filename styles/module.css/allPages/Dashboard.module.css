@@ -1,0 +1,43 @@
+#Dashboard {
+  width: 100%;
+  height: auto;
+  margin-top: -15px !important;
+}
+#Dashboard #pageHead{
+  height:50px;
+  background-color: rgba(128, 128, 128, 0.596);
+  width: 106% !important;  
+  margin-left: -3% !important;
+  margin-right: -3% !important;
+  margin-bottom: 6px !important;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex
+}
+#Dashboard #pageHead img{
+  width: 300px;
+  height: 400px;
+}
+#Dashboard #pageHead .textHolder{
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  width: 90% !important;
+}
+#Dashboard #content{
+  height:auto;
+  width: 100% !important;  
+}
+#Dashboard #content .a_row{
+  margin-top: 5px;
+}
+#Dashboard #content .a_row h2{
+  color: black;
+  text-align: left;
+  margin-left: 4px;
+  height: 21px;
+}
+/*# sourceMappingURL=Dashboard.module.css.map */

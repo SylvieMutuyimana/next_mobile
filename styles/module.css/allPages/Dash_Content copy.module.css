@@ -1,0 +1,148 @@
+.row1, .row2 {
+  color: black !important;
+  display: flex;
+  padding: 0px !important;
+  width: 99.5%;
+  gap: 5px;
+}
+
+.row1 .card, .row1 .col, .row2 .card, .row2 .col {
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.row1 {
+  height:95px;
+  margin-top: -15px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.row1 .card {
+  border-radius: 5px;
+  width: 205px;
+  height: 70px !important;
+  border: 1px solid rgba(105, 69, 1, 0.274);
+  background-color: #e0e0e02f;
+  padding: 2px 0px 5px 0px;
+  cursor: pointer;
+}
+.row1 .card:hover {
+  background-color:transparent;
+  border: 1px solid gray;
+}
+.row1 .card .top, .row1 .card .bottom{
+  padding: 0 !important;
+  width: 100%;
+  margin: 0 !important;
+}
+.row1 .card .top{
+  height: 49px;
+  background-color: var(--maincolor_extralight);
+  border-radius: 50%;
+  width: 49px !important;
+  margin-left: 20px !important;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.row1 .card .top img{
+  width: 100% !important;
+  height: 100% !important;
+}
+.row1 .card .bottom{
+  height: 22px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 85px !important;
+}
+
+
+.row2 {
+  height: auto !important;
+  display: block;
+  background-color: yellow;
+
+}
+.row2 .col {
+  width: 48%;
+}
+.row2 .col:nth-child(even) {
+  float: right;
+}
+.row2 .col .h4 {
+  margin-top: 1.5% !important;
+  height: 9.5% !important;
+}
+.row2 .col .h4 h4 {
+  color: black !important;
+  text-decoration: underline;
+}
+.row2 .col .theBlock {
+  overflow-y: scroll;
+  height: 90%;
+}
+.row2 .col table {
+  width: 100%;
+  position: relative;
+  background-color: white;
+}
+.row2 .col table tr {
+  height: 34px !important;
+}
+.row2 .col table thead {
+  width: 100%;
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.1764705882);
+  border: 1px solid rgba(128, 128, 128, 0.1764705882);
+}
+.row2 .col table thead tr {
+  border: 1px solid rgba(128, 128, 128, 0.1764705882);
+}
+.row2 .col table thead tr th {
+  border: 1px solid rgba(128, 128, 128, 0.1764705882);
+}
+.row2 .col table thead tr:last-child {
+  background-color: grey;
+  padding: 0 !important;
+  height: 4px !important;
+}
+.row2 .col table thead tr:last-child hr {
+  height: 1px solid !important;
+  margin: 0 !important;
+}
+.row2 .col table tbody {
+  width: 100%;
+  margin-top: 10px;
+}
+.row2 .col.one {
+  height: 350px;
+}
+.row2 .col.one .h4 {
+  height: 6.5% !important;
+}
+.row2 .col.one .theBlock {
+  height: 92%;
+}
+.row2 .col.two {
+  height: 200px;
+  margin-top: -352px;
+}
+.row2 .col.two .h4 {
+  height: 11.5% !important;
+}
+.row2 .col.two .theBlock {
+  height: 88%;
+}
+.row2 .col.three {
+  height: 250px;
+  margin-top: 30px;
+}
+.row2 .col.four {
+  height: 250px;
+  margin-top: -252px;
+}

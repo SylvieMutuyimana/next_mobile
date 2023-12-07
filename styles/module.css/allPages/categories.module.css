@@ -1,0 +1,202 @@
+.grid1, .grid2 {
+  color: black !important;
+  padding: 0px !important;
+  width: 99.5%;
+}
+
+.grid1 .card, .grid2 .card{
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.grid1 .card:hover, .grid2 .card:hover {
+  font-weight: bold !important;
+  color: #2c2c2c;
+}
+
+.grid1 {
+  height:95px;
+  width: 111.7% !important;
+  margin-left: -9px;
+  margin-top: -26px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  gap: 5px;
+  background-color: #FDB764;
+}
+.grid1 .card{
+  border-radius: 5px;
+  width: 220px;
+  height: 70px !important;
+  padding: 2px 0px 5px 0px;
+}
+.grid1 .card .top, .grid1 .card .bottom{
+  padding: 0 !important;
+  width: 100%;
+  margin: 0 !important;
+}
+.grid1 .card .top{
+  height: 49px;
+  background-color: var(--maincolor_extralight);
+  border-radius: 50%;
+  width: 49px !important;
+  margin-left: 20px !important;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 0px solid transparent !important;
+  overflow: hidden;
+
+}
+.grid1 .card .top img{
+  width: 100% !important;
+  height: 100% !important;
+}
+.grid1 .card .bottom{
+  height: 22px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 85px !important;
+}
+
+
+.grid2 {
+  height: auto !important;
+  margin-top: 5px;
+  overflow: hidden;
+  width: 97% !important;
+  background-color: yellow;
+}
+.grid2 .card {
+  border-radius: 5px;
+  width: 100%;
+  float: left;
+  height: 50px !important;
+  padding: 6px 4px;
+  background-color: #ceccc7;
+}
+.grid2 .card.cart {
+  height: 70px !important;
+}
+.grid2 .card.wishlist {
+  height: 40px !important;
+  width: 29.1%;
+  margin: 0 !important;
+  margin-left: 5px !important;
+}
+.grid2 .card.wishlist:first-child,
+.grid2 .card.wishlist:nth-child(3n+1){
+  margin-left: 0px !important;
+}
+.grid2 .card.wishlist:nth-child(n+2){
+  margin-top: 0px !important;
+}
+.grid2 .card.wishlist:nth-child(n+4){
+  margin-top: 5px !important;
+}
+.grid2 .card:nth-child(n+2){
+  margin-top: 5px !important;
+}
+.grid2 .card article, .grid2 .card aside{
+  height: 100%;
+  max-height: 100%;
+}
+.grid2 .card article{
+  width: 30%;
+  max-width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid2 .card aside{
+  width: 65%;
+  max-width: 70%;
+  text-align: left;
+}
+.grid2 .card aside p{
+  margin: 0 !important;
+}
+.grid2 .card aside p:first-child{
+  height: 70%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  overflow:hidden;
+}
+
+.grid2 .card aside p:last-child{
+  height: 30%;
+  font-weight: bold;
+}
+.grid2 .card.cart aside div{
+  height: 20%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  font-weight: normal !important;
+}
+.grid2 .card.cart aside div p{
+  width: 33% !important;
+  font-style: italic;
+  color: navy;
+}
+.grid2 .card.cart aside div p:first-child{
+  font-weight: normal !important;
+  text-align: left;
+}
+.grid2 .card.cart aside div p:first-child{
+  font-weight: normal !important;
+  text-align: right;
+}
+.grid2 .card.cart aside p:first-child{
+  height: 60%;
+  font-weight: bold;
+}
+.grid2 .card.cart aside p:last-child{
+  height: 20%;
+}
+.grid2 .card.cart aside div p:last-child{
+  height: 100%;
+  font-weight: normal !important;
+}
+.theItem{
+  width: 95%;
+  padding: 0 2%;
+}
+.theItem section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.theItem section.theHead, .theItem .details section.row1{
+  height: 30px !important;
+}
+.theItem section.theHead div, .theItem .details section.row1 div{
+  width: 33% !important;
+}
+.theItem section.theHead div:first-child, .theItem .details section.row1 div:first-child{
+  text-align: left !important;
+}
+.theItem section.theHead div:nth-child(2), .theItem .details section.row1 div:nth-child(2){
+  text-align: center;
+}
+.theItem section.theHead div:last-child, .theItem .details section.row1 div:last-child{
+  text-align: right;
+}
+.theItem section.theHead div h4{
+  color: black !important;
+  height: 4px !important;
+}
+.theItem .details .row2{
+  width: 100%;
+  text-align: left;
+}

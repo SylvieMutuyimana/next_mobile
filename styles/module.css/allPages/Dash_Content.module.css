@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(105, 69, 1, 0.274);
-  background-color: #e0e0e02f;
+  background-color: white;
   cursor: pointer;
 }
 .row1 .card:hover, .row2 .card:hover {

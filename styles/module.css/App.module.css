@@ -30,11 +30,15 @@
   width: 100% !important;
 }
 #App .theApp .header{
-  background-color: rgb(255, 147, 0);
+  background-color: var(--header_background);
   border-bottom: 1.5px solid #c97602;
+  
 }
 #App .theApp .footer{
-  background-color: var(--header_background);
+  background-color: var(--footer_background);
+  
+  border-top: 1px grey !important;
+  box-shadow: inset 0 -1px grey;
 }
 #App .theApp .footer, #App .theApp .header{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
